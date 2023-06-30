@@ -1,0 +1,141 @@
+.container {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+    margin-right: 3.25rem;
+    width: 26rem;
+    height: 17.375rem;
+    border-radius: 2.25rem;
+    background-position: 1px 1px;
+    background-size: 99%;
+    background-repeat: no-repeat;
+}
+.container:last-child {
+    margin-right: 0;
+}
+
+.container:hover .card {
+    bottom: 4px;
+    left: 4px;
+}
+.card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 2.25rem 2.375rem 0 2.375rem;
+    width: 26rem;
+    height: 17.375rem;
+    border-radius: 2.25rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 600ms;
+}
+.card_coin {
+    background-color: #111;
+    background-position: 1rem 1.25rem;
+    background-size: 94%;
+}
+.title_line {
+    width: 2.875rem;
+    height: 0.25rem;
+    border-radius: 0.6875rem;
+}
+.title_line_blue {
+    background: var(--gradiant-gradiant-syntax, linear-gradient(180deg, #38c1a5 0%, #0891d5 100%));
+}
+.title_line_green {
+    background: var(--gradiant-gradiant-learning-track, linear-gradient(180deg, #d9e313 0%, #3cbc34 100%));
+}
+.title_line_orange {
+    background: var(--gradiant-gradiant-concept, linear-gradient(180deg, #e0ad38 0%, #eb3e1c 100%));
+}
+
+.title {
+    margin-top: 1.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.tag_list {
+    display: flex;
+    margin-top: 1.25rem;
+}
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.25rem;
+    padding: 0 0.25rem;
+    height: 1.125rem;
+    border: 1px solid var(--text-text-gray, var(--border-color-base));
+    border-radius: 1.25rem;
+}
+.tag_text {
+    transform: scale(0.75, 0.75);
+}
+
+.desc {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: var(--color-text-secondary);
+    text-overflow: ellipsis;
+
+    -webkit-line-clamp: 2;
+}
+.desc3 {
+    -webkit-line-clamp: 3;
+}
+
+.attr_list {
+    display: flex;
+    align-items: center;
+    margin-top: 2.8125rem;
+}
+.attr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.875rem;
+    color: var(--color-text-regular);
+}
+.attr_text {
+    margin-left: 0.5rem;
+    padding-top: 2px;
+}
+
+.attr_complete {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -1.25rem;
+    margin-left: auto;
+    padding: 0 1rem;
+    border-radius: 2.5rem;
+    background: #2a2a2a;
+}
+.attr_complete .attr_text {
+    color: #9efa13;
+}
+
+.task_list {
+    margin-top: 4.125rem;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.31rem;
+    border-bottom: 1px solid #282828;
+}
+.task .label {
+    color: var(--color-text-secondary);
+}
+
+.question {
+    margin-top: 9.25rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
